@@ -2,5 +2,14 @@ GET  /tests/          controllers.TestController.getAll
 POST /tests/add        controllers.TestController.create
 GET /tests/get        controllers.TestController.get(id : Long)
 PUT /tests/update     controllers.TestController.update
+DELETE /tests/delete  controllers.TestController.delete(id : Long)
+POST /tests/check     controllers.TestController.check
+
+GET  /users/          controllers.UserController.getAll
+POST /users/add        controllers.UserController.create
+GET /users/get        controllers.UserController.get(id : Long)
+PUT /users/update     controllers.UserController.update
+DELETE /users/delete  controllers.UserController.delete(id : Long)
+
 
 

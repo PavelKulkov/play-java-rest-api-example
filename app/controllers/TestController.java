@@ -8,6 +8,7 @@ import play.mvc.*;
 import services.TestService;
 
 import javax.inject.Inject;
+import javax.xml.transform.Result;
 
 
 public class TestController extends Controller {
@@ -43,5 +44,12 @@ public class TestController extends Controller {
         return ok(Json.toJson(testService.update(Json.fromJson(json,Test.class))));
     }
 
+    public Result delete(Long id) {
+        return null;
+    }
+
+    public Result check() {
+        return  null;
+    }
 
 }
